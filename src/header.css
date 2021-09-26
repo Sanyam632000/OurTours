@@ -1,0 +1,10 @@
+h1 {
+  font-weight: bold;
+  text-align: center;
+  font-size: 50px;
+}
+
+hr {
+  width: 150px;
+  background-color: blue;
+}
