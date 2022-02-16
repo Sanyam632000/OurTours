@@ -51,7 +51,9 @@ function OurTour(){
   if(tours.length === 0){
     return<>
     <h2 style={{textAlign:'center',marginTop:50}}>No Tours Left</h2>
+    <div style={{textAlign:'center',marginTop:50}}>
     <button className='btn btn-primary' onClick={()=>fetchTour()}>Refresh</button>
+    </div>
     </>
   }
 
@@ -88,6 +90,7 @@ const Tour =({id,image,info,name,price}) =>{
   
   const [readMore,setReadMore] = useState(false);
   const {removeTour} = useContext(PersonContext);                     //For useContext to avoid PropDrilling
+
   return <div className='container'>
 
     <img src={image} alt=''></img>
@@ -101,7 +104,7 @@ const Tour =({id,image,info,name,price}) =>{
         </p> 
 
         <br></br>
-        <button className='btn btn-danger' onClick={() => removeTour(id)}>Not Interested</button>
+        <button className='btn btn-danger not-interested' onClick={() => removeTour(id)}>Not Interested</button>
                 
       </div>
       <br></br>

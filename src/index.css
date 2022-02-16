@@ -59,9 +59,10 @@ p {
   background-color: white;
 }
 
-button {
+.not-interested {
   margin-left: 300px;
   margin-bottom: 100px;
+  margin-top: 50px;
 }
 
 .readmore {
@@ -75,7 +76,160 @@ button {
   color: rgb(212, 212, 105);
 }
 
-.btn-primary {
-  margin-left: 730px;
-  margin-top: 100px;
+@media screen and (max-width: 1200px) {
+  img {
+    height: 400px;
+    width: 800px;
+    margin-left: 100px;
+    transition: transform 2ms;
+    border-radius: 5px;
+  }
+
+  .tour-info {
+    width: 800px;
+    background-color: white;
+    margin-left: 100px;
+    border: 1px solid white;
+    border-radius: 5px;
+    transition: box-shadow 0.3s;
+  }
+
+  .not-interested {
+    margin-left: 250px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  img {
+    height: 400px;
+    width: 600px;
+    margin-left: 50px;
+    transition: transform 2ms;
+    border-radius: 5px;
+  }
+
+  .tour-info {
+    width: 600px;
+    background-color: white;
+    margin-left: 50px;
+    border: 1px solid white;
+    border-radius: 5px;
+    transition: box-shadow 0.3s;
+  }
+}
+
+@media screen and (max-width: 790px) {
+  img {
+    height: 400px;
+    width: 500px;
+    margin-left: 50px;
+    transition: transform 2ms;
+    border-radius: 5px;
+  }
+
+  .tour-info {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    margin-left: 50px;
+    border: 1px solid white;
+    border-radius: 5px;
+    transition: box-shadow 0.3s;
+  }
+
+  .not-interested {
+    width: 200px;
+    margin-left: 150px;
+  }
+
+  .name {
+    float: left;
+    margin-top: 25px;
+    margin-left: 10px;
+    width: 450px;
+    color: white;
+    background-color: lightblue;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  .price {
+    float: right;
+    margin-top: 25px;
+    width: 100px;
+    color: white;
+    background-color: lightblue;
+    margin-left: 20px;
+    padding: 10px;
+    border-radius: 5px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  img {
+    height: 400px;
+    width: 400px;
+    margin-left: 50px;
+    transition: transform 2ms;
+    border-radius: 5px;
+  }
+
+  .tour-info {
+    width: 400px;
+    background-color: white;
+    margin-left: 50px;
+    border: 1px solid white;
+    border-radius: 5px;
+    transition: box-shadow 0.3s;
+  }
+
+  .name {
+    float: left;
+    margin-top: 25px;
+    margin-left: 10px;
+    width: 375px;
+    color: white;
+    background-color: lightblue;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  .not-interested {
+    margin-left: 100px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  img {
+    height: 350px;
+    width: 350px;
+    margin-left: 10px;
+    transition: transform 2ms;
+    border-radius: 5px;
+  }
+
+  .tour-info {
+    width: 350px;
+    background-color: white;
+    margin-left: 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+    transition: box-shadow 0.3s;
+  }
+
+  .name {
+    float: left;
+    margin-top: 25px;
+    margin-left: 10px;
+    width: 300px;
+    color: white;
+    background-color: lightblue;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  .not-interested {
+    margin-left: 100px;
+  }
 }
